@@ -8,8 +8,6 @@ go:
 sudo: false
 os:
 - linux
-env:
-  secure: DIdDml8gNouBc7Lw6hyOQj0PNKbhfGC0RK3wnF/Vtxz3V0nZJbe4+qFqIariYLhurlHB20QKPlsel28pHbSvR4+SCHPZRD6Id/JfGGmKdHRzlVYpcOAMNoOwqJLcKWoIV00644JerkCkvShA0tqWd1kk9NkWAkIMLV1l1KdGZsQySgPFNNbhcRuidDN74zE49Wl6iR1rEZR3veN0aoaRvMUCKZQFDDquS9J8E98lkTKIOFObDLwopCO0sTQ23UbknBhxaCRkDBKyty+GgsV4OhoFMpmh985l+KqLNdKsjGu0M34lXi2wx+eK7H1VfJbYnU3dImbOvyuJMCYQBf62kLW1h84WwpWNfnSd+ZTVN8LwZeyWxHUFHBmPC5D8qsfIW254GxxuNwH+g5t3Si6BIGgVZ8qaFHNpcvBba8mTSwt+6+w3PJWFqbqPdyjJ6+uSsBINkHpsphF066dn6eSNRQu5f5n0lcOqQt1zcyvI4yi9s40l/kisGpGcU/jXzLRaOhJz1lTvU7fmtv16UmAwVN88ZoOZ4Dj6WImJIt4PBq7qAIKGKlbFV7OnIGWeYgpKFr4AcZUU7fMC8QMypHf0V3xf0skwtlvtEIse7F0pXAMFjPYfJmp9JG2QNCnLHP/y4eoUtD6Eu7/Cq33Z8uFDxYnlb1lRsXEU2sl5+NvbhOM=
 addons:
   postgresql: '9.5'
 install:
@@ -30,3 +28,6 @@ script:
 - bazel clean
 - bazel run //:gazelle
 - bazel test --config=ci  //test/integration/...
+env:
+  global:
+    secure: o7H4pkgfexYHHhR3ko6PqHF5qeGcJTLrSl4jQTBcoe5WeWd+GmWDrL6/yYox9LCE3x1EpNAY5aj4ZQ+J+pXE+E4t+C4aPmeMmCxdKwocsX8YcTnlL8wNh3Xq2HTEhr4THO4SHIMaLQDxyUQy5EKUdk1eJT2U976fNBJoq27VCS1hoVqS/KCN+XWwXKKK/zLT3v3GqoD4EisMxmOy+DLV+s16km5SJ4aBSqa19LWskdcOQjDs2wfru4x9vrOI+Bo0JLoGTk6KDQUd4rHco0ArAdPgsXvq17IcAQBbrKB24RtY3oVc3qrbCgZDH2I9W/us0jha/3V7GnbC5qaajimfBtNJf3pKDvH5avcKrujJfc2q+7jIf4+VW7yDI+C+YY33qsH1LCTFEsM2/pQGIc1OjdoVJvX/ePEjIRCVYLw3Mee+7TkQA4z2hG6Y502by+l7YU2ZIKgQO3pf/LoCdYVmOjyWGz5TMjey77HGgxsCtnCM/2Hl+SU06/D34MbHqIJG99CZBoFPtN/boUpX3g9cqcf5Q6pPrvdZm3Eohu8QK/qsjgGtXI/QJ0UBnOB2NTkI6ABeg0ASI9GsyHItaUkKl/l1KFnUru/NCKOEeccB8qKVDTwvVc0j/VwGSwTfxA2UgnzadMQW/kT6lpeQHjrGjHVzLvzKHOIfa6QJ6s8WjJk=
